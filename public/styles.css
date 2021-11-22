@@ -1,0 +1,166 @@
+@media (min-width: 1200px)
+{
+    .container {
+    max-width: 1250px;
+    }
+}
+
+/* Waves animation - Start */
+
+@keyframes quiet {
+    25%{
+        transform: scaleY(.6);
+    }
+    50%{
+        transform: scaleY(.4);
+    }
+    75%{
+        transform: scaleY(.8);
+    }
+}
+  
+@keyframes normal {
+    25%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform: scaleY(.4);
+    }
+    75%{
+        transform: scaleY(.6);
+    }
+}
+@keyframes loud {
+    25%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform: scaleY(.4);
+    }
+    75%{
+        transform: scaleY(1.2);
+    }
+}
+
+.waves {
+    position: absolute;
+    bottom: 14rem;
+    display: flex;
+    justify-content: space-between;
+    --boxSize: 8px;
+    --gutter: 4px;
+    width: calc((var(--boxSize) + var(--gutter)) * 14);
+}
+
+.wave {
+    transform: scaleY(.4);
+    height: 100%;
+    width: var(--boxSize);
+    background: #00c3d5;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    border-radius: 8px;
+    display: hidden;
+}
+
+.wave-quiet {
+    display: block !important;
+    animation-name: quiet;
+}
+
+.wave-normal {
+    display: block !important;
+    animation-name: normal;
+}
+
+.wave-loud {
+    display: block !important;
+    animation-name: loud;
+}
+
+/* Waves animation - End*/
+
+.navbar {
+    background-color: #F8BE32;
+    height: 6vh;
+}
+
+.navbar-brand {
+    max-width: 1250px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.handwriting {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5rem;
+    color: #aaaaaa;
+    letter-spacing: 2px;
+}
+
+#progress-bar_inner {
+    width: 0%;
+}
+
+.anychart-credits-logo, .anychart-credits-text {
+    display: none;
+}
+
+.speech-text {
+    width: 19.35rem;
+    height: 4.15rem;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    margin: 3rem 0;
+    font-style: italic;
+    font-family: 'Georgia';
+    color: #aaaaaa;
+}
+
+.diagnostic {
+    color: #aaaaaa;
+}
+
+.speak {
+    cursor: pointer;
+    z-index: 1;
+}
+
+.ipad_portrait {
+    position: absolute;
+    width: 400px;
+}
+
+.ipad_landscape {
+    position: absolute;
+    height: 522px;
+}
+
+.negative {
+    color: #aaaaaa;
+}
+
+.prominent-cyan, .postiive {
+    color: #00c3d5;
+}
+
+.width-65 {
+    width: 65%;
+}
+
+.reactions {
+    margin-top: 2rem;
+    height: 2rem;
+}
+
+#my_canvas {
+    margin-top: 2rem;
+    height: 10rem;
+}
